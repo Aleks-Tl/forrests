@@ -1,0 +1,15 @@
+:root {
+
+  //base
+
+  --font-family: "Montserrat", sans-serif;
+  --content-width: 1510px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --primary: #111111;
+  --secondary: #777777;
+  --greenColor: #008000;
+  --whiteColor: #ffffff;
+}

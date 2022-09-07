@@ -1,0 +1,164 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// Header
+
+.header {
+  padding: 20px 50px;
+  position: relative;
+  @media (max-width: 992px) {
+    padding: 10px 20px;
+  }
+  @media (max-width: 576px) {
+    padding: 10px;
+  }
+  .burger {
+    @include burger;
+    z-index: 100;
+    @media (max-width: 576px) {
+      height: 20px;
+      &:after, &:before {
+        height: 3px;
+      }
+      &__line {
+        height: 3px;
+      }
+    }
+  }
+  ul {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      transition: all 0.3s ease 0s;
+      transform: translateX(100%);
+      padding: 0;
+      padding-left: 50px;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      z-index: 99;
+      background-color: var(--whiteColor);
+      @media (max-width: 1800px) {
+        width: 30%;
+      }
+      @media (max-width: 1400px) {
+         width: 40%;
+      }
+      @media (max-width: 992px) {
+        padding-left: 25px;
+      }
+      @media (max-width: 768px) {
+        width: 45%;
+      }
+      @media (max-width: 576px) {
+        width: 60%;
+        padding-left: 15px;
+      }
+      > li {
+        @media (max-width: 576px) {
+          margin-bottom: 4px;
+        }
+        > a {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 50px;
+          text-transform: uppercase;
+          color: var(--primary);
+          transition: all 0.3s ease 0s;
+          &:hover {
+            color: var(--secondary);
+            @media (max-width: 768px) {
+              color: var(--primary);
+            }
+          }
+          @media (max-width: 992px) {
+            font-size: 20px;
+            line-height: 35px;
+          }
+          @media (max-width: 576px) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+      &.menu--active {
+        transform: translate(0);
+      }
+  }
+
+  // .header__wrap
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .header__wrapper
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+  }
+
+  // .header__logo
+
+  &__logo {
+    img {
+      @media (max-width: 576px) {
+        max-width: 66%;
+      }
+    }
+  }
+
+  // .header__contacts
+
+  &__contacts {
+    position: relative;
+    z-index: 100;
+    > a  {
+      display: block;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      text-transform: uppercase;
+      color: var(--primary);
+      transition: all 0.3s ease 0s;
+      &:hover {
+        color: var(--secondary);
+      }
+      @media (max-width: 992px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+      @media (max-width: 576px) {
+          font-size: 12px;
+          line-height: 16px;
+      }
+    }
+    @media (max-width: 992px) {
+      position: absolute;
+      top: 30px;
+      left: 25px;
+    }
+    @media (max-width: 576px) {
+      left: 15px;
+    }
+  }
+
+  // .header__phone
+
+  &__phone {}
+
+}
+
+
+
