@@ -1,4 +1,4 @@
-import vars from '../_vars';
+/* import vars from '../_vars';
 
 export const disableScroll = () => {
   const fixBlocks = document?.querySelectorAll('.fixed-block');
@@ -12,3 +12,4 @@ export const disableScroll = () => {
   vars.bodyEl.dataset.position = pagePosition;
   vars.bodyEl.style.top = `-${pagePosition}px`;
 }
+ */

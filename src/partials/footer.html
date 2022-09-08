@@ -1,8 +1,25 @@
 <footer class="footer">
-  <div class="container">
-
-  </div>
+    <div class="footer__wrap">
+      <div class="footer__copy">
+        <div>© <span class="year">2022</span> Forrest's Passenger Services. All Rights Reserved. Designed by <a href="https://webcapitancom">Webcapitan</a></div>
+        <div><a href="#">Trademarks, Copyrights and Restrictions</a> | <a href="#">Terms and conditions</a></div>
+      </div>
+      <div class="footer__local">
+        <div class="footer__time">
+          local time: <br>
+          <span class="time">10:15 AM AEST</span>
+        </div>
+        <a href="#"><img src="img/facebook-footer.svg" alt=""></a>
+      </div>
+    </div>
 </footer>
+<div class="overlay" data-menu-overlay>
 
-<div class="overlay" data-menu-overlay></div>
+</div>
+
+<script>
+  let today = new Date();
+  let year = today.getFullYear();
+  document.querySelector('.year').innerHTML = year;
+</script>
 <script src="js/main.js"></script>

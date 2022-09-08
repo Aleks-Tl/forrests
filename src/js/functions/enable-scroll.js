@@ -1,4 +1,4 @@
-import vars from '../_vars';
+/* import vars from '../_vars';
 
 export const enableScroll = () => {
   const fixBlocks = document?.querySelectorAll('.fixed-block');
@@ -16,3 +16,4 @@ export const enableScroll = () => {
   vars.bodyEl.removeAttribute('data-position');
   vars.htmlEl.style.scrollBehavior = 'smooth';
 }
+ */

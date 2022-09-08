@@ -6,9 +6,7 @@ html {
 }
 
 body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+
 }
 
 *,
@@ -28,10 +26,14 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-size-adjust: 100%;
 }
 
-.page__body {
+body {
+  height: 100% !important;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
   min-width: 320px;
-  min-height: 100%;
+  //min-height: 100%;
   font-size: 14px;
   color: var(--primary);
 }
@@ -84,6 +86,11 @@ a {
   height: 1px;
   clip: rect(0 0 0 0);
 } */
+
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
 .container {
   margin: 0 auto;
