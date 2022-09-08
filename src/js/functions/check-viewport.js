@@ -1,4 +1,4 @@
-export const isMobile = () => {
+/* export const isMobile = () => {
   if (window.innerWidth < 768) {
     return true;
   }
@@ -21,3 +21,4 @@ export const isDesktop = () => {
 
   return false;
 };
+ */

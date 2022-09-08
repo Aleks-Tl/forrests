@@ -1,15 +1,20 @@
 <footer class="footer">
-    <div class="footer__wrap">
-      <div class="footer__copy">
-        <div>© <span class="year">2022</span> Forrest's Passenger Services. All Rights Reserved. Designed by <a href="https://webcapitancom">Webcapitan</a></div>
-        <div><a href="#">Trademarks, Copyrights and Restrictions</a> | <a href="#">Terms and conditions</a></div>
-      </div>
-      <div class="footer__local">
-        <div class="footer__time">
-          local time: <br>
-          <span class="time">10:15 AM AEST</span>
+    <div class="container-fluid">
+      <div class="footer__wrap">
+        <div class="footer__copy">
+          <div>© <span class="year">2022</span> Forrest's Passenger Services. All Rights Reserved. Designed by <a href="https://webcapitancom">Webcapitan</a></div>
+          <div>
+            <a href="#">Trademarks, Copyrights and Restrictions</a>
+            <a href="#">Terms and conditions</a>
+         </div>
         </div>
-        <a href="#"><img src="img/facebook-footer.svg" alt=""></a>
+        <div class="footer__local">
+          <div class="footer__time">
+            local time: <br>
+            <span class="time">10:15 AM<span>AEST</span></span>
+          </div>
+          <a href="#"><img src="img/facebook-footer.svg" alt=""></a>
+        </div>
       </div>
     </div>
 </footer>
@@ -19,7 +24,9 @@
 
 <script>
   let today = new Date();
+  let time = today.toLocaleTimeString('en-US');
   let year = today.getFullYear();
   document.querySelector('.year').innerHTML = year;
+  document.querySelector('.time').innerHTML = time + ' AEST';
 </script>
 <script src="js/main.js"></script>

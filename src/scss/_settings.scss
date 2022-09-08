@@ -2,11 +2,7 @@ html {
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-
+  //overflow: hidden;
 }
 
 *,
@@ -15,19 +11,8 @@ body {
   box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-.page {
-  height: 100%;
-  font-family: var(--font-family, sans-serif);
-  -webkit-text-size-adjust: 100%;
-}
-
 body {
-  height: 100% !important;
+  height: 100% ;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
@@ -36,7 +21,17 @@ body {
   //min-height: 100%;
   font-size: 14px;
   color: var(--primary);
+  font-family: var(--font-family, sans-serif);
 }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
 
 img {
   height: auto;
