@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@include('partials/head.html')
+
+<body class="page__body">
+
+    @include('partials/header.html')
+
+    <section class="book">
+      <div class="container-fluid">
+        <div class="book__slider">
+          <div class="swiper mySwiper book-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide book-step-one">
+                <div class="book-step-one__wrap">
+                  <div class="book-step-one__suburb">
+                    <h1 class="suburb__title">Please select your suburb:</h1>
+                    <div class="checkboxes-suburb">
+                      <div>
+                        <input type="checkbox" id="check1" name="check1">
+                        <label for="check1">Banksia Beach</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check2" name="check2">
+                        <label for="check2">Beachmere</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check3" name="check3" checked>
+                        <label for="check3">Bellara</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check4" name="check4">
+                        <label for="check4">Bongaree</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check5" name="check5">
+                        <label for="check5">Ningi</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check6" name="check6">
+                        <label for="check6">Sandstone Point</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check7" name="check7">
+                        <label for="check7">Woorim</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check8" name="check8">
+                        <label for="check8">White Patch</label>
+                      </div>
+                    </div>
+
+                    <div class="checkboxes-suburb-b">
+                      <div>
+                        <input type="checkbox" id="check9" name="check9">
+                        <label for="check9">Cabooltu re</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check10" name="check10">
+                        <label for="check10">Caboolture South </label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check11" name="check11">
+                        <label for="check11">Elimbah</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check12" name="check12">
+                        <label for="check12">Moodlu</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check13" name="check13">
+                        <label for="check13">Morayfield</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check14" name="check14">
+                        <label for="check14">Upper Caboolture</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="book-step-one__port">
+                    <h1 class="suburb__title">Please select your port:</h1>
+                    <div class="checkboxes-suburb">
+                      <div>
+                        <input type="checkbox" id="check15" name="check15">
+                        <label for="check15">Brisbane Domestic Terminal</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check16" name="check16">
+                        <label for="check16">Brisbane International Terminal</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check17" name="check17">
+                        <label for="check17">Brisbane Jet Base Terminal</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check18" name="check18">
+                        <label for="check18">Portside Hamilton*</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="check19" name="check19">
+                        <label for="check19">Brisbane International Cruise Terminal*</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="book-step-one__map">
+                    <section id="map" style="position: relative; overflow: hidden; height:100%; width: 100%;">
+
+                    </section>
+                    <div class="map-date">
+                      <div class="map-estimated">
+                        <div class="map-name">Estimated time:</div>
+                        <div class="map-estimated-val">50 - 80 mins</div>
+                      </div>
+                      <div class="map-distace">
+                        <div class="map-name">Approximate distance:</div>
+                        <div class="map-distace-val">56 km</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide book-step-two" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat;">
+                <div class="container-fluid">
+                  <div class="selected-s">
+                    <div class="selected-s__wrap">
+                      <div class="selected-s__surbur">
+                        <div class="selected-s__name">selected suburb:</div>
+                        <div class="selected-s__val">Sandstone Point</div>
+                      </div>
+                      <div class="selected-s__port">
+                        <div class="selected-s__name">selected port:</div>
+                        <div class="selected-s__val">Brisbane Jet Base Terminal</div>
+                      </div>
+                    </div>
+                    <div class="selected-s__cost">
+                      cost:   <span>$120.00AUD</span>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="book-step-two__wrap">
+                      <div class="book-step-two__origin">
+                        <h1 class="book-step-two__title title-sm">Origin</h1>
+                        <span class="call">Call our office if your travel is less than 24 hours away</span>
+                        <form action="#" class="origin">
+                          <label for="date">Flight/Cruise departure/arrival date</label>
+                          <input type="date" id="date" value="27 July 2022">
+                          <label for="time">Flight/Cruise departure/arrival time</label>
+                          <input type="time" id="time" value="6:30 PM">
+                          <label for="to-coming-from">Where is this flight going to/coming from? (For flights only)</label>
+                          <input type="text" id="to-coming-from">
+                          <label for="flight-number">Flight number/Ship name</label>
+                          <input type="text" id="flight-number">
+                          <div class="book-step-two__bot">
+                            <input type="checkbox" id="not-flying" name="not-flying" checked>
+                            <label for="not-flying">Not flying/cruising</label>
+                          </div>
+                          <div class="book-step-two__bot">
+                            <input type="checkbox" id="details" name="details">
+                            <label for="details">Save these details for next time?</label>
+                          </div>
+
+                        </form>
+                      </div>
+                      <div class="book-step-two__return">
+                        <div class="book-step-two__switch">
+                          <label class="switch">
+                            <input type="checkbox" name="switcher" id="price" checked>
+                            <span class="slider round"></span>
+                          </label>
+                        </div>
+                        <h1 class="book-step-two__title title-sm">Return</h1>
+                        <form action="#" class="return">
+                          <label for="date">Flight/Cruise departure/arrival date</label>
+                          <input type="date" id="date" value="27 July 2022">
+                          <label for="time">Flight/Cruise departure/arrival time</label>
+                          <input type="time" id="time" value="6:30 PM">
+                          <label for="to-coming-from">Where is this flight going to/coming from? (For flights only)</label>
+                          <input type="text" id="to-coming-from">
+                          <label for="flight-number">Flight number/Ship name</label>
+                          <input type="text" id="flight-number">
+                          <div class="book-step-two__bot">
+                            <input type="checkbox" id="not-flying-return" name="not-flying-return">
+                            <label for="not-flying-return">Not flying/cruising</label>
+                          </div>
+                          <div class="book-step-two__bot">
+                            <input type="checkbox" id="details-return" name="details-return">
+                            <label for="details-return">Save these details for next time?</label>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="swiper-slide book-step-three" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">Slide 3</div>
+              <div class="swiper-slide book-step-four" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">Slide 4</div>
+              <div class="swiper-slide book-step-five" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">Slide 5</div>
+            </div>
+            <div class="swiper-btn-next"><img src="img/arrow-next.svg" alt=""></div>
+            <div class="swiper-btn-prev"><img src="img/arrow-prev.svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @include('partials/footer.html')
+
+
+    <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS8EX2FYhrN7TL3GgHETCDoD7lTv8fPm8&callback=initMap&v=weekly"
+  defer></script>
+<script>
+
+  if (document.querySelector('#map')) {
+    let cord = '40.73435507696337, -74.16782915468902';
+
+    const coord = {
+      lat: Number(cord.split(',')[0]),
+      lng: Number(cord.split(',')[1])
+    };
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+
+      // The map, centered at Uluru
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: coord,
+        styles: style,
+      });
+      // The marker, positioned at Uluru
+      const marker = new google.maps.Marker({
+        position: coord,
+        map: map,
+      });
+    }
+
+    const style = [
+      {
+        "featureType": "all",
+        "elementType": "all",
+        "stylers": [
+          {
+            "invert_lightness": true
+          },
+          {
+            "saturation": 10
+          },
+          {
+            "lightness": 30
+          },
+          {
+            "gamma": 0.5
+          },
+          {
+            "hue": "#435158"
+          }
+        ]
+      }
+    ]
+    window.initMap = initMap;
+  }
+  </script>
+</body>
+
+</html>
