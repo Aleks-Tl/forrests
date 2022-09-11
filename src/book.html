@@ -195,9 +195,474 @@
 
 
               </div>
-              <div class="swiper-slide book-step-three" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">Slide 3</div>
-              <div class="swiper-slide book-step-four" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">Slide 4</div>
-              <div class="swiper-slide book-step-five" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">Slide 5</div>
+              <div class="swiper-slide book-step-three-origin" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">
+                <div class="container-fluid">
+                  <div class="selected-s">
+                    <div class="selected-s__wrap">
+                      <div class="selected-s__surbur">
+                        <div class="selected-s__name">selected suburb:</div>
+                        <div class="selected-s__val">Sandstone Point</div>
+                      </div>
+                      <div class="selected-s__port">
+                        <div class="selected-s__name">selected port:</div>
+                        <div class="selected-s__val">Brisbane Jet Base Terminal</div>
+                      </div>
+                    </div>
+                    <div class="selected-s__cost">
+                      cost:   <span>$120.00AUD</span>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="book-step-three-origin__items">
+                      <div class="book-step-three-origin__item">
+                        <div class="book-step-three-origin__info">
+                          <div class="book-step-three-origin__img">
+                            <img src="img/step-3-icon-family.svg" alt="">
+                          </div>
+                          <div class="book-step-three-origin__text">Please select total number of passengers:</div>
+                        </div>
+                        <div class="book-step-three-origin__footer">
+                          <div class="counter">
+                            <button type="button" class="but counterBut dec"><</button>
+                            <input type="text" class="field fieldCount" name="family" value="2" data-min="1" data-max="20">
+                            <button type="button" class="but counterBut inc">></button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="book-step-three-origin__item">
+                        <div class="book-step-three-origin__info">
+                          <div class="book-step-three-origin__img">
+                            <img src="img/step-3-icon-clock.svg" alt="">
+                          </div>
+                          <div class="book-step-three-origin__text">Is pickup after 10:30pm & before first service (04:00am)</div>
+                        </div>
+                        <div class="book-step-three-origin__footer">
+                          <label class="switch">
+                            <input type="checkbox" name="switcher" id="switcher" checked>
+                            <span class="slider round"></span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="book-step-three-origin__item">
+                        <div class="book-step-three-origin__info">
+                          <div class="book-step-three-origin__img">
+                            <img src="img/step-3-icon-bagagge.svg" alt="">
+                          </div>
+                          <div class="book-step-three-origin__text">Total articles of luggage?</div>
+                        </div>
+                        <div class="book-step-three-origin__footer">
+                          <div class="counter">
+                            <button type="button" class="but counterBut dec"><</button>
+                            <input type="text" class="field fieldCount" name="bagagge" value="4" data-min="1" data-max="20">
+                            <button type="button" class="but counterBut inc">></button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="book-step-three-origin__item">
+                        <img src="img/step3-img-backing.jpg" alt="">
+                      </div>
+
+                      <div class="book-step-three-origin__item">
+                        <div class="book-step-three-origin__info">
+                          <div class="book-step-three-origin__img">
+                            <img src="img/step-3-icon-chair.svg" alt="">
+                          </div>
+                          <div class="book-step-three-origin__text">How many child restraints do we need to supply?</div>
+                        </div>
+                        <div class="book-step-three-origin__footer">
+                          <div class="counter">
+                            <button type="button" class="but counterBut dec"><</button>
+                            <input type="text" class="field fieldCount" name="chair" value="2" data-min="1" data-max="20">
+                            <button type="button" class="but counterBut inc">></button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="book-step-three-origin__item">
+                        <div class="book-step-three-origin__info">
+                          <div class="book-step-three-origin__img">
+                            <img src="img/step-3-icon-armchair.svg" alt="">
+                          </div>
+                          <div class="book-step-three-origin__text">How many booster seats do we need to supply?</div>
+                        </div>
+                        <div class="book-step-three-origin__footer">
+                          <div class="counter">
+                            <button type="button" class="but counterBut dec"><</button>
+                            <input type="text" class="field fieldCount" name="armchair" value="0" data-min="0" data-max="20">
+                            <button type="button" class="but counterBut inc">></button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide book-step-three-return book-step-three-origin" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">
+                <div class="container-fluid">
+                  <div class="selected-s">
+                    <div class="selected-s__wrap">
+                      <div class="selected-s__surbur">
+                        <div class="selected-s__name">selected suburb:</div>
+                        <div class="selected-s__val">Sandstone Point</div>
+                      </div>
+                      <div class="selected-s__port">
+                        <div class="selected-s__name">selected port:</div>
+                        <div class="selected-s__val">Brisbane Jet Base Terminal</div>
+                      </div>
+                    </div>
+                    <div class="selected-s__cost">
+                      cost:   <span>$120.00AUD</span>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="book-step-three-origin__items">
+                      <div class="book-step-three-origin__item">
+                        <div class="book-step-three-origin__info">
+                          <div class="book-step-three-origin__img">
+                            <img src="img/step-3-icon-family.svg" alt="">
+                          </div>
+                          <div class="book-step-three-origin__text">Please select total number of passengers:</div>
+                        </div>
+                        <div class="book-step-three-origin__footer">
+                          <div class="counter-wrapper">
+                            <div class="counter-wrap">
+                              <label for="family-orig">Origin trip</label>
+                              <div class="counter">
+                                <button type="button" class="but counterBut dec"><</button>
+                                <input type="text" class="field fieldCount" name="family-orig" id="family-orig" value="2" data-min="1" data-max="20">
+                                <button type="button" class="but counterBut inc">></button>
+                              </div>
+                            </div>
+                            <div class="counter-wrap">
+                              <label for="family-return">Return trip</label>
+                              <div class="counter">
+                                <button type="button" class="but counterBut dec"><</button>
+                                <input type="text" class="field fieldCount" name="family-return" id="family-return" value="2" data-min="1" data-max="20">
+                                <button type="button" class="but counterBut inc">></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="book-step-three-origin__item">
+                        <div class="book-step-three-origin__info">
+                          <div class="book-step-three-origin__img">
+                            <img src="img/step-3-icon-clock.svg" alt="">
+                          </div>
+                          <div class="book-step-three-origin__text">Is pickup after 10:30pm & before first service (04:00am)</div>
+                        </div>
+                        <div class="book-step-three-origin__footer">
+                          <div class="switchers">
+                            <label class="switch">
+                              <input type="checkbox" name="switcher1" id="switcher1" checked>
+                              <span class="slider round"></span>
+                            </label>
+                            <label class="switch">
+                              <input type="checkbox" name="switcher2" id="switcher2">
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="book-step-three-origin__item">
+                        <div class="book-step-three-origin__info">
+                          <div class="book-step-three-origin__img">
+                            <img src="img/step-3-icon-bagagge.svg" alt="">
+                          </div>
+                          <div class="book-step-three-origin__text">Total articles of luggage?</div>
+                        </div>
+                        <div class="book-step-three-origin__footer">
+                          <div class="counter-wrapper">
+                            <div class="counter-wrap">
+                              <label for="luggage-orig">Origin trip</label>
+                              <div class="counter">
+                                <button type="button" class="but counterBut dec"><</button>
+                                <input type="text" class="field fieldCount" name="luggage-orig" id="luggage-orig" value="3" data-min="1" data-max="20">
+                                <button type="button" class="but counterBut inc">></button>
+                              </div>
+                            </div>
+                            <div class="counter-wrap">
+                              <label for="luggage-return">Return trip</label>
+                              <div class="counter">
+                                <button type="button" class="but counterBut dec"><</button>
+                                <input type="text" class="field fieldCount" name="luggage-return" id="luggage-return" value="4" data-min="1" data-max="20">
+                                <button type="button" class="but counterBut inc">></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="book-step-three-origin__item">
+                        <img src="img/step3-img-backing.jpg" alt="">
+                      </div>
+
+                      <div class="book-step-three-origin__item">
+                        <div class="book-step-three-origin__info">
+                          <div class="book-step-three-origin__img">
+                            <img src="img/step-3-icon-chair.svg" alt="">
+                          </div>
+                          <div class="book-step-three-origin__text">How many child restraints do we need to supply?</div>
+                        </div>
+                        <div class="book-step-three-origin__footer">
+                          <div class="counter-wrapper">
+                            <div class="counter-wrap">
+                              <label for="chair-orig">Origin trip</label>
+                              <div class="counter">
+                                <button type="button" class="but counterBut dec"><</button>
+                                <input type="text" class="field fieldCount" name="chair-orig" id="chair-orig" value="2" data-min="1" data-max="20">
+                                <button type="button" class="but counterBut inc">></button>
+                              </div>
+                            </div>
+                            <div class="counter-wrap">
+                              <label for="chair-return">Return trip</label>
+                              <div class="counter">
+                                <button type="button" class="but counterBut dec"><</button>
+                                <input type="text" class="field fieldCount" name="chair-return" id="chair-return" value="2" data-min="1" data-max="20">
+                                <button type="button" class="but counterBut inc">></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="book-step-three-origin__item">
+                        <div class="book-step-three-origin__info">
+                          <div class="book-step-three-origin__img">
+                            <img src="img/step-3-icon-armchair.svg" alt="">
+                          </div>
+                          <div class="book-step-three-origin__text">How many booster seats do we need to supply?</div>
+                        </div>
+                        <div class="book-step-three-origin__footer">
+                          <div class="counter-wrapper">
+                            <div class="counter-wrap">
+                              <label for="armchair-orig">Origin trip</label>
+                              <div class="counter">
+                                <button type="button" class="but counterBut dec"><</button>
+                                <input type="text" class="field fieldCount" name="armchair-orig" id="armchair-orig" value="0" data-min="1" data-max="20">
+                                <button type="button" class="but counterBut inc">></button>
+                              </div>
+                            </div>
+                            <div class="counter-wrap">
+                              <label for="armchair-return">Return trip</label>
+                              <div class="counter">
+                                <button type="button" class="but counterBut dec"><</button>
+                                <input type="text" class="field fieldCount" name="armchair-return" id="armchair-return" value="0" data-min="1" data-max="20">
+                                <button type="button" class="but counterBut inc">></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide book-step-four" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">
+                <div class="container-fluid">
+                  <div class="selected-s">
+                    <div class="selected-s__wrap">
+                      <div class="selected-s__surbur">
+                        <div class="selected-s__name">selected suburb:</div>
+                        <div class="selected-s__val">Sandstone Point</div>
+                      </div>
+                      <div class="selected-s__port">
+                        <div class="selected-s__name">selected port:</div>
+                        <div class="selected-s__val">Brisbane Jet Base Terminal</div>
+                      </div>
+                    </div>
+                    <div class="selected-s__cost">
+                      cost:   <span>$120.00AUD</span>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="book-step-four__forms">
+                      <form action="#" class="names">
+                        <label for="name">First name<span>*</span></label>
+                        <input type="text" name="name" id="name" placeholder="Harrison" required>
+                        <label for="middle-initial">Middle initial</label>
+                        <input type="text" name="middle-initial" id="middle-initial">
+                        <label for="surname">Surname<span>*</span></label>
+                        <input type="text" name="surname" id="surname" placeholder="Seitz" required>
+                        <label for="email">Contact email<span>*</span></label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="phone">Phone number 1<span>*</span></label>
+                        <input type="tel" name="phone" id="phone" required>
+                        <label for="phone2">Phone number 2<span>*</span></label>
+                        <input type="tel" name="phone2" id="phone2" required>
+                      </form>
+                      <form action="#" class="address-origin">
+                        <h2 class="title-sm">address origin</h2>
+                        <label for="address">Apartment, Lot, Site, Unit, Villa number:</label>
+                        <input type="text" name="address" id="address">
+                        <label for="street">Street number<span>*</span></label>
+                        <input type="text" name="street" id="street" required>
+                        <label for="address-descr">Address description</label>
+                        <input type="text" name="address-descr" id="address-descr">
+                        <label for="street-name">Street name<span>*</span></label>
+                        <input type="text" name="street-name" id="street-name" required>
+                        <label for="suburb">Suburb<span>*</span></label>
+                        <input type="text" name="suburb" id="suburb" required>
+                      </form>
+                      <form action="#" class="address-return">
+                        <h2 class="title-sm">address Return</h2>
+                        <label for="address-return">Apartment, Lot, Site, Unit, Villa number:</label>
+                        <input type="text" name="address-return" id="address-return">
+                        <label for="street-return">Street number<span>*</span></label>
+                        <input type="text" name="street-return" id="street-return" required>
+                        <label for="address-descr-return">Address description</label>
+                        <input type="text" name="address-descr-return" id="address-descr-return">
+                        <label for="street-name-return">Street name<span>*</span></label>
+                        <input type="text" name="street-name-return" id="street-name-return" required>
+                        <label for="suburb-return">Suburb<span>*</span></label>
+                        <input type="text" name="suburb-return" id="suburb-return" required>
+                        <div>
+                          <input type="checkbox" id="trip" name="trip">
+                          <label for="trip">Getting picked up/dropped off at same address for this trip?</label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide book-step-five" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">
+                <div class="container-fluid">
+                  <div class="selected-s">
+                    <div class="selected-s__wrap">
+                      <div class="selected-s__surbur">
+                        <div class="selected-s__name">selected suburb:</div>
+                        <div class="selected-s__val">Sandstone Point</div>
+                      </div>
+                      <div class="selected-s__port">
+                        <div class="selected-s__name">selected port:</div>
+                        <div class="selected-s__val">Brisbane Jet Base Terminal</div>
+                      </div>
+                    </div>
+                    <div class="selected-s__cost">
+                      cost:   <span>$120.00AUD</span>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="book-step-five__wrap">
+                      <div class="book-step-five__payment">
+                        <h2 class="title-sm">payment</h2>
+                        <form action="#" class="payment">
+                        <label for="card-number">Card number<span>*</span></label>
+                        <input type="text" name="card-number" id="card-number" placeholder="1234 - 5678 - 9876 - 5432" value="1234 - 5678 - 9876 - 5432" required>
+                        <label for="card-name">Cardholder name<span>*</span></label>
+                        <input type="text" name="card-name" id="card-name" placeholder="Harrison Seitz" value="Harrison Seitz" required>
+                        <div class="payment__wrap">
+                          <div class="payment__wrapper">
+                            <label for="expiry-date">Expiry date<span>*</span></label>
+                            <select name="month" id="month">
+                              <option value="month" selected>Month</option>
+                              <option value="val - 1">Value - 1</option>
+                              <option value="val - 2">Value - 2</option>
+                              <option value="val - 3">Value - 3</option>
+                              <option value="val - 4">Value - 4</option>
+                            </select>
+                          </div>
+                          <div class="payment__wrapper">
+                            <select name="year" id="year">
+                              <option value="tear" selected>Year</option>
+                              <option value="val - 1">Value - 1</option>
+                              <option value="val - 2">Value - 2</option>
+                              <option value="val - 3">Value - 3</option>
+                              <option value="val - 4">Value - 4</option>
+                            </select>
+                          </div>
+                          <div class="payment__wrapper">
+                            <label for="cvc">CVC code*<span>*</span></label>
+                            <input type="password" name="cvc" id="cvc" required>
+                          </div>
+                        </div>
+                        <input type="submit" value="confirm payment" class="book-step-five__btn btn btn-reset">
+                      </form>
+                      </div>
+                      <div class="book-step-five__info">
+                          <h3 class="book-step-five__name">Contact information</h3>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-name-in">Name</div>
+                            <div class="info-glob info-name-out">Harrison Seitz</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-email-in">Email</div>
+                            <div class="info-glob info-email-out">harrison@email.com</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-contact-number-in">Contact Number</div>
+                            <div class="info-glob info-contact-number-out">+610455 8887 999</div>
+                          </div>
+                          <h3 class="book-step-five__name">One Way Details</h3>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-trip-type-in">Trip Type</div>
+                            <div class="info-glob info-trip-type-out">Flight</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-trip-number-in">Trip Number</div>
+                            <div class="info-glob info-trip-number-out">VA344</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-arrival-in">Arrival/Departured Shedule</div>
+                            <div class="info-glob info-arrival-out">12:00 AM 18/08/2022</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-shuttle-in">Shuttle Trip Shedule</div>
+                            <div class="info-glob info-shuttle-out"> <p>LEAVE - 5:30 AM 18/8/2022</p><p>ARRIVE - 6:45 AM 18/8/2022</p></div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-depart-form-in">Depart Form</div>
+                            <div class="info-glob info-depart-form-out">Brisbane Domestic Airport</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-destination-in">Destination</div>
+                            <div class="info-glob info-destination-out">Banksia Beach</div>
+                          </div>
+                          <h3 class="book-step-five__name">payment details</h3>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-one-way-fare-in">One way fare</div>
+                            <div class="info-glob info-one-way-fare-out">$120.00</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-return-fare-in">Return fare</div>
+                            <div class="info-glob info-return-fare-out">NIL</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-child-set-hire-in">Child set hire</div>
+                            <div class="info-glob info-child-set-hire-out">NIL</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-excess-in">Excess/over-sized/overweight luggage</div>
+                            <div class="info-glob info-excess-out">NIL</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-after-hours-fare-in">After-hours fare</div>
+                            <div class="info-glob info-after-hours-fare-out">NIL</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-fare-excluding-in">Fare excluding GST</div>
+                            <div class="info-glob info-fare-excluding-out">$109.10</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob info-gst-in">GST</div>
+                            <div class="info-glob info-gst-out">$10.90</div>
+                          </div>
+                          <div class="info__wrapper">
+                            <div class="info-glob-total info-total-in">Total fare</div>
+                            <div class="info-glob-total info-total-out">$120.00</div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="swiper-btn-next"><img src="img/arrow-next.svg" alt=""></div>
             <div class="swiper-btn-prev"><img src="img/arrow-prev.svg" alt=""></div>

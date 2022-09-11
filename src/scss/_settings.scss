@@ -175,3 +175,28 @@ a {
   text-transform: uppercase;
   color: var(--primary);
 }
+
+
+// Btn
+
+.btn {
+  background-color: var(--greenColor);
+  box-shadow: 0px 5px 10px rgba(0, 128, 0, 0.2);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--whiteColor) !important;
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: #64AA3A;
+  }
+  @media (max-width: 576px) {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
