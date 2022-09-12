@@ -45,16 +45,16 @@ if (document.querySelectorAll('.book-step-three-origin').length > 0) {
     var fieldCount = function(el) {
 
       var
-        // Мин. значение
+        // Min. value
         min = el.data('min') || false,
 
-        // Макс. значение
+        // Max. value
         max = el.data('max') || false,
 
-        // Кнопка уменьшения кол-ва
+        // Decrease button
         dec = el.prev('.dec'),
 
-        // Кнопка увеличения кол-ва
+        // Increase Quantity Button
         inc = el.next('.inc');
 
       function init(el) {
@@ -63,7 +63,7 @@ if (document.querySelectorAll('.book-step-three-origin').length > 0) {
           inc.on('click', increment);
         }
 
-        // Уменьшим значение
+        // Decrease the value
         function decrement() {
           var value = parseInt(el[0].value);
           value--;
@@ -130,6 +130,7 @@ if (document.querySelectorAll('.book-step-two').length > 0) {
   })
 
 }
+
 
 
 

@@ -1511,11 +1511,18 @@
 
       &__wrapper {
         flex: 0 1 40%;
+        //position: relative;
         &:last-child {
           flex: 0 1 20%;
         }
         @media (max-width: 768px) {
           flex: 0 1 100% !important;
+        }
+        #cvc {
+          background-image: url('../img/cvc-icon.svg');
+          background-repeat: no-repeat;
+          background-position: 100% center;
+          background-size: 20px 20px;
         }
       }
   }
@@ -2029,5 +2036,300 @@
   .time {
   }
 }
+
+
+// Page our areas
+
+.our-areas {
+  max-height: 736px;
+  @media (max-width: 992px) {
+    max-height: none;
+  }
+  .container-fluid {
+    //height: 100%;
+  }
+  // .our-areas__wrap
+
+  &__wrap {
+    //height: 100%;
+    display: flex;
+    //align-items: stretch;
+    @media (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+    //justify-content: space-between;
+  }
+
+  // section map
+
+  &__map {
+    flex: 0 1 50%;
+    @media (max-width: 992px) {
+      iframe {
+        height: 500px !important;
+      }
+      flex: 0 1 100%;
+    }
+    @media (max-width: 576px) {
+      iframe {
+        height: 400px !important;
+      }
+    }
+  }
+
+  // .our-areas__descr
+
+  &__descr {
+    flex: 0 1 50%;
+    padding: 80px 100px 80px 170px;
+    @media (max-width: 1400px) {
+      padding: 70px 100px;
+    }
+    @media (max-width: 1200px) {
+      padding: 50px;
+    }
+    @media (max-width: 992px) {
+      flex: 0 1 100%;
+    }
+    @media (max-width: 768px) {
+        padding: 40px 20px;
+    }
+  }
+
+  // .our-areas__wrapper
+
+  &__wrapper {
+    max-width: 433px;
+    form {
+      width: 100%;
+      input,
+      label {
+        width: 100%;
+        display: block;
+      }
+      label {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: var(--secondary);
+      }
+      input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #eeeeee;
+        padding: 9px 9px 9px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--primary);
+        &::placeholder {
+          opacity: 0.5;
+        }
+      }
+    }
+    @media (max-width: 992px) {
+      max-width: none;
+    }
+  }
+
+  // .our-areas__title
+
+  &__title {}
+
+  // .our-areas__text
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--primary);
+  }
+
+  // .our-areas__btn
+
+  &__btn {
+    display: block;
+    max-width: fit-content;
+    margin-top: 40px;
+    padding-left: 93px;
+    padding-right: 93px;
+    @media (max-width: 768px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+
+// Page Our Fares
+
+.our-fares {
+  padding-bottom: 52px;
+  // .our-fares__title
+
+  &__title {
+    padding-top: 60px;
+    color: var(--whiteColor);
+    text-align: center;
+  }
+
+  // .our-fares__wrap
+
+  &__wrap {
+    margin-top: 30px;
+    display: flex;
+    column-gap: 2px;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      row-gap: 2px;
+    }
+  }
+
+  // .our-fares__item1
+
+  &__item1, &__item2 {
+    > ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-top: 20px;
+      > li {
+        display: flex;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 23px;
+        cursor: pointer;
+        color: var(--primary);
+        transition: all 0.2 ease 0s;
+        &:nth-child(even) {
+          background-color: rgba(#64AA3A, 0.1);
+        }
+        > div {
+          padding-left: 20px;
+          @media (max-width: 576px) {
+            padding-left: 10px;
+          }
+          &:first-child {
+            flex: 0 1 40%;
+            @media (max-width: 576px) {
+              flex: 0 1 30%;
+            }
+          }
+          &:nth-child(2) {
+            flex: 0 1 30%;
+            @media (max-width: 576px) {
+              flex: 0 1 35%;
+            }
+          }
+          &:last-child {
+            flex: 0 1 30%;
+            @media (max-width: 576px) {
+              flex: 0 1 35%;
+            }
+          }
+        }
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &__item1 {
+    background-color: var(--whiteColor);
+    flex: 0 1 50%;
+    padding: 30px 60px;
+    @media (max-width: 1400px) {
+      padding: 30px;
+    }
+    @media (max-width: 992px) {
+      flex: 0 1 100%;
+    }
+    @media (max-width: 576px) {
+      padding: 15px;
+    }
+  }
+
+  // .our-fares__from
+
+  &__from {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--secondary);
+    padding: 0;
+    margin: 0;
+  }
+
+  // .our-fares__name
+
+  &__name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--primary);
+    @media (max-width: 576px) {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+
+  // .our-fares__atent
+
+  &__atent {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #AA0000;
+    @media (max-width: 576px) {
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 5px;
+    }
+  }
+
+  // .our-fares__item2
+
+  &__item2 {
+    background-color: var(--whiteColor);
+    flex: 0 1 50%;
+    padding: 30px 60px;
+    > ul {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 1400px) {
+      padding: 30px;
+    }
+    @media (max-width: 992px) {
+      flex: 0 1 100%;
+    }
+    @media (max-width: 576px) {
+      padding: 15px;
+    }
+  }
+
+  .number-head, .cost-head, .price-head {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--secondary);
+    margin-bottom: 5px;
+    @media (max-width: 576px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  .cost-head {
+  }
+  .price-head {
+  }
+  .number {
+  }
+  .cost {
+  }
+  .price {
+  }
+}
+
+
 
 

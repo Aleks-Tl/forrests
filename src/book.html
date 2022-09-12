@@ -1073,60 +1073,61 @@
 
 
     <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS8EX2FYhrN7TL3GgHETCDoD7lTv8fPm8&callback=initMap&v=weekly"
-  defer></script>
-<script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS8EX2FYhrN7TL3GgHETCDoD7lTv8fPm8&callback=initMap&v=weekly"
+    defer></script>
 
-  if (document.querySelector('#map')) {
-    let cord = '40.73435507696337, -74.16782915468902';
+    <script>
 
-    const coord = {
-      lat: Number(cord.split(',')[0]),
-      lng: Number(cord.split(',')[1])
-    };
-    // Initialize and add the map
-    function initMap() {
-      // The location of Uluru
+      if (document.querySelector('#map')) {
+        let cord = '40.73435507696337, -74.16782915468902';
 
-      // The map, centered at Uluru
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: coord,
-        styles: style,
-      });
-      // The marker, positioned at Uluru
-      const marker = new google.maps.Marker({
-        position: coord,
-        map: map,
-      });
-    }
+        const coord = {
+          lat: Number(cord.split(',')[0]),
+          lng: Number(cord.split(',')[1])
+        };
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
 
-    const style = [
-      {
-        "featureType": "all",
-        "elementType": "all",
-        "stylers": [
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 12,
+            center: coord,
+            styles: style,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+            position: coord,
+            map: map,
+          });
+        }
+
+        const style = [
           {
-            "invert_lightness": true
-          },
-          {
-            "saturation": 10
-          },
-          {
-            "lightness": 30
-          },
-          {
-            "gamma": 0.5
-          },
-          {
-            "hue": "#435158"
+            "featureType": "all",
+            "elementType": "all",
+            "stylers": [
+              {
+                "invert_lightness": true
+              },
+              {
+                "saturation": 10
+              },
+              {
+                "lightness": 30
+              },
+              {
+                "gamma": 0.5
+              },
+              {
+                "hue": "#435158"
+              }
+            ]
           }
         ]
+        window.initMap = initMap;
       }
-    ]
-    window.initMap = initMap;
-  }
-  </script>
+      </script>
 </body>
 
 </html>
