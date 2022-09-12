@@ -98,3 +98,20 @@ if (document.querySelectorAll('.book-step-three-origin').length > 0) {
 
 catalogItemCounter('.fieldCount');
 }
+
+
+/* let returnInp = document.querySelector('#return-inp');
+
+
+
+let form  = document.getElementById("return");
+let allElements = form.elements;
+
+for (var i = 0, l = allElements.length; i < l; ++i) {
+      // allElements[i].readOnly = true;
+         allElements[i].disabled=false;
+         form.style.opacity = '1';
+         document.querySelector('.#return-inp').style.outline = "1px solid red";
+} */
+
+

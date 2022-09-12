@@ -134,7 +134,7 @@
                       </div>
                     </div>
                     <div class="selected-s__cost">
-                      cost:   <span>$120.00AUD</span>
+                      cost:<span> $120.00AUD</span>
                     </div>
                   </div>
                   <div class="container">
@@ -165,12 +165,12 @@
                       <div class="book-step-two__return">
                         <div class="book-step-two__switch">
                           <label class="switch">
-                            <input type="checkbox" name="switcher" id="price" checked>
+                            <input type="checkbox" name="switcher" id="return-inp" checked>
                             <span class="slider round"></span>
                           </label>
                         </div>
                         <h1 class="book-step-two__title title-sm">Return</h1>
-                        <form action="#" class="return">
+                        <form action="#" class="return" id="return">
                           <label for="date">Flight/Cruise departure/arrival date</label>
                           <input type="date" id="date" value="27 July 2022">
                           <label for="time">Flight/Cruise departure/arrival time</label>
@@ -195,7 +195,192 @@
 
 
               </div>
-              <div class="swiper-slide book-step-three-origin" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">
+              <div class="swiper-slide book-step-shedule" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat;">
+                <div class="container-fluid">
+                  <div class="selected-s">
+                    <div class="selected-s__wrap">
+                      <div class="selected-s__surbur">
+                        <div class="selected-s__name">selected suburb:</div>
+                        <div class="selected-s__val">Sandstone Point</div>
+                      </div>
+                      <div class="selected-s__port">
+                        <div class="selected-s__name">selected port:</div>
+                        <div class="selected-s__val">Brisbane Jet Base Terminal</div>
+                      </div>
+                    </div>
+                    <div class="selected-s__cost">
+                      cost:<span> $120.00AUD</span>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="book-step-shedule__wrap">
+                        <div class="book-step-shedule__origin">
+                          <h3 class="title-sm">Origin</h3>
+                           <ul class="book-step-shedule__list">
+                            <li>
+                              <div class="departure-head">We depart Bribie<br> at this time:</div>
+                              <div class="arrival-head">We arrive at airport/cruise<br> terminals no later than:</div>
+                            </li>
+                            <li>
+                              <div class="departure">04:00 (4AM)</div>
+                              <div class="arrival">05:30 (5:30AM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">05:00 (5AM)</div>
+                              <div class="arrival">06:30 (6:30AM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">06:00 (6AM)</div>
+                              <div class="arrival">07:30 (7:30AM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">07:00 (7AM)</div>
+                              <div class="arrival">08:30 (8:30AM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">08:00 (8AM)</div>
+                              <div class="arrival">09:30 (9:30AM)</div>
+                            </li>
+                            <li class="selected-time">
+                              <div class="departure">09:00 (9AM)</div>
+                              <div class="arrival">10:30 (10:30AM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">10:00 (10AM)</div>
+                              <div class="arrival">11:30 (11:30AM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">11:00 (11AM)</div>
+                              <div class="arrival">12:30 (12:30PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">12:00 (12PM)</div>
+                              <div class="arrival">13:30 (1:30PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">13:00 (1PM)</div>
+                              <div class="arrival">14:30 (2:30PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">14:00 (2PM)</div>
+                              <div class="arrival">15:30 (3:30PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">15:00 (3PM)</div>
+                              <div class="arrival">16:30 (4:30PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">16:00 (4PM)</div>
+                              <div class="arrival">17:30 (5:30PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">17:00 (5PM)</div>
+                              <div class="arrival">18:30 (6:30PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">18:00 (6PM)</div>
+                              <div class="arrival">19:30 (7:30PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">19:00 (7PM)</div>
+                              <div class="arrival">20:30 (8:30PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">20:00 (8PM)</div>
+                              <div class="arrival">21:30 (9:30PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">21:00 (9PM)</div>
+                              <div class="arrival">22:30 (10:30PM)</div>
+                            </li>
+                           </ul>
+                        </div>
+                        <div class="book-step-shedule__return">
+                          <h3 class="title-sm">Return</h3>
+                           <ul class="book-step-shedule__list">
+                            <li>
+                              <div class="departure-head">We depart airport/cruise<br> terminals at this time:</div>
+                              <div class="arrival-head">We arrive at Bribie<br> no later that:</div>
+                            </li>
+                            <li>
+                              <div class="departure">05:30 (5:30AM)</div>
+                              <div class="arrival">07:00 (7AM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">06:30 (6:30AM)</div>
+                              <div class="arrival">08:00 (8AM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">07:30 (7:30AM)</div>
+                              <div class="arrival">09:00 (9AM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">08:30 (8:30AM)</div>
+                              <div class="arrival">10:00 (10AM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">09:30 (9:30AM)</div>
+                              <div class="arrival">11:00 (11AM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">10:30 (10:30AM)</div>
+                              <div class="arrival">12:00 (12PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">11:30 (11:30AM)</div>
+                              <div class="arrival">13:00 (1PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">12:30 (12:30PM)</div>
+                              <div class="arrival">14:00 (2PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">13:30 (1:30PM)</div>
+                              <div class="arrival">15:00 (3PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">14:30 (2:30PM)</div>
+                              <div class="arrival">16:00 (4PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">15:30 (3:30PM)</div>
+                              <div class="arrival">17:00 (5PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">16:30 (4:30PM)</div>
+                              <div class="arrival">18:00 (6PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">17:30 (5:30PM)</div>
+                              <div class="arrival">19:00 (7PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">18:30 (6:30PM)</div>
+                              <div class="arrival">20:00 (8PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">19:30 (7:30PM)</div>
+                              <div class="arrival">21:00 (9PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">20:30 (8:30PM)</div>
+                              <div class="arrival">22:00 (10PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">21:30 (9:30PM)</div>
+                              <div class="arrival">23:00 (11PM)</div>
+                            </li>
+                            <li>
+                              <div class="departure">22:30 (10:30PM)</div>
+                              <div class="arrival">00:00 (12AM)</div>
+                            </li>
+                           </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide book-step-shedule" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat;">
                 <div class="container-fluid">
                   <div class="selected-s">
                     <div class="selected-s__wrap">
@@ -210,6 +395,191 @@
                     </div>
                     <div class="selected-s__cost">
                       cost:   <span>$120.00AUD</span>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="book-step-shedule__wrap">
+                      <div class="book-step-shedule__origin">
+                        <h3 class="title-sm">Origin</h3>
+                         <ul class="book-step-shedule__list">
+                          <li>
+                            <div class="departure-head">We depart Cabooolture &<br> Surrounds at this time:</div>
+                            <div class="arrival-head">We arrive at airport/cruise<br> terminals no later than:</div>
+                          </li>
+                          <li>
+                            <div class="departure">04:30 (5:30AM)</div>
+                            <div class="arrival">05:30 (5:30AM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">05:30 (5:30AM)</div>
+                            <div class="arrival">06:30 (6:30AM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">06:30 (6:30AM)</div>
+                            <div class="arrival">07:30 (7:30AM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">07:30 (7:30AM)</div>
+                            <div class="arrival">08:30 (8:30AM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">08:30 (8:30AM)</div>
+                            <div class="arrival">09:30 (9:30AM)</div>
+                          </li>
+                          <li class="selected-time">
+                            <div class="departure">09:30 (9:30AM)</div>
+                            <div class="arrival">10:30 (10:30AM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">10:30 (10:30AM)</div>
+                            <div class="arrival">11:30 (11:30AM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">11:30 (11:30AM)</div>
+                            <div class="arrival">12:30 (12:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">12:30 (12:30PM)</div>
+                            <div class="arrival">13:30 (1:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">13:30 (1:30PM)</div>
+                            <div class="arrival">14:30 (2:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">14:30 (2:30PM)</div>
+                            <div class="arrival">15:30 (3:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">15:30 (3:30PM)</div>
+                            <div class="arrival">16:30 (4:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">16:30 (4:30PM)</div>
+                            <div class="arrival">17:30 (5:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">17:30 (5:30PM)</div>
+                            <div class="arrival">18:30 (6:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">18:30 (6:30PM)</div>
+                            <div class="arrival">19:30 (7:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">19:30 (7:30PM)</div>
+                            <div class="arrival">20:30 (8:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">20:30 (8:30PM)</div>
+                            <div class="arrival">21:30 (9:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">21:30 (9:30PM)</div>
+                            <div class="arrival">22:30 (10:30PM)</div>
+                          </li>
+                         </ul>
+                      </div>
+                      <div class="book-step-shedule__return">
+                        <h3 class="title-sm">Return</h3>
+                         <ul class="book-step-shedule__list">
+                          <li>
+                            <div class="departure-head">We depart airport/cruise<br> terminals at this time:</div>
+                            <div class="arrival-head">We arrive at Cabooolture &<br> Surrounds no later that:</div>
+                          </li>
+                          <li>
+                            <div class="departure">05:30 (5:30AM)</div>
+                            <div class="arrival">06:30 (6:30AM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">06:30 (6:30AM)</div>
+                            <div class="arrival">07:30 (7:30AM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">07:30 (7:30AM)</div>
+                            <div class="arrival">08:30 (8:30AM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">08:30 (8:30AM)</div>
+                            <div class="arrival">09:30 (9:30AM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">09:30 (9:30AM)</div>
+                            <div class="arrival">10:30 (10:30AM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">10:30 (10:30AM)</div>
+                            <div class="arrival">11:30 (11:30AM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">11:30 (11:30AM)</div>
+                            <div class="arrival">12:30 (12:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">12:30 (12:30PM)</div>
+                            <div class="arrival">13:30 (1:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">13:30 (1:30PM)</div>
+                            <div class="arrival">14:30 (2:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">14:30 (2:30PM)</div>
+                            <div class="arrival">15:30 (3:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">15:30 (3:30PM)</div>
+                            <div class="arrival">16:30 (4:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">16:30 (4:30PM)</div>
+                            <div class="arrival">17:30 (5:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">17:30 (5:30PM)</div>
+                            <div class="arrival">18:30 (6:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">18:30 (6:30PM)</div>
+                            <div class="arrival">19:30 (7:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">19:30 (7:30PM)</div>
+                            <div class="arrival">20:30 (8:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">20:30 (8:30PM)</div>
+                            <div class="arrival">21:30 (9:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">21:30 (9:30PM)</div>
+                            <div class="arrival">22:30 (10:30PM)</div>
+                          </li>
+                          <li>
+                            <div class="departure">22:30 (10:30PM)</div>
+                            <div class="arrival">23:30 (11:30PM)</div>
+                          </li>
+                         </ul>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide book-step-three-origin" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">
+                <div class="container-fluid">
+                  <div class="selected-s">
+                    <div class="selected-s__wrap">
+                      <div class="selected-s__surbur">
+                        <div class="selected-s__name">selected suburb:</div>
+                        <div class="selected-s__val">Sandstone Point</div>
+                      </div>
+                      <div class="selected-s__port">
+                        <div class="selected-s__name">selected port:</div>
+                        <div class="selected-s__val">Brisbane Jet Base Terminal</div>
+                      </div>
+                    </div>
+                    <div class="selected-s__cost">
+                      cost:<span> $120.00AUD</span>
                     </div>
                   </div>
                   <div class="container">
@@ -316,7 +686,7 @@
                       </div>
                     </div>
                     <div class="selected-s__cost">
-                      cost:   <span>$120.00AUD</span>
+                      cost:<span> $120.00AUD</span>
                     </div>
                   </div>
                   <div class="container">
@@ -479,7 +849,7 @@
                       </div>
                     </div>
                     <div class="selected-s__cost">
-                      cost:   <span>$120.00AUD</span>
+                      cost:<span> $120.00AUD</span>
                     </div>
                   </div>
                   <div class="container">
@@ -546,7 +916,7 @@
                       </div>
                     </div>
                     <div class="selected-s__cost">
-                      cost:   <span>$120.00AUD</span>
+                      cost:<span> $120.00AUD</span>
                     </div>
                   </div>
                   <div class="container">
@@ -579,7 +949,7 @@
                             </select>
                           </div>
                           <div class="payment__wrapper">
-                            <label for="cvc">CVC code*<span>*</span></label>
+                            <label for="cvc">CVC code<span>*</span></label>
                             <input type="password" name="cvc" id="cvc" required>
                           </div>
                         </div>

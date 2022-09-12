@@ -554,6 +554,7 @@
             border-bottom: 1px solid #EEEEEE;
             box-sizing: border-box;
             background-color: transparent;
+            border-radius: 0 !important;
             @media (max-width: 576px) {
               margin-bottom: 10px;
               margin-top: 5px;
@@ -576,8 +577,9 @@
             position: relative;
             appearance: none;
             cursor: pointer;
-            margin-bottom: 9px;
-            padding-left: 18px;
+            display: block;
+            margin-top: 5px;
+            padding-left: 22px;
             //display: inline-block;
           }
           input[type="checkbox"]:before {
@@ -615,7 +617,10 @@
       // .book-step-two__bot
 
       &__bot {
+        display: flex;
+        align-items: flex-start;
         margin-bottom: 5px;
+        //margin-bottom: 5px;
         &:last-child {
           margin-bottom: 0;
         }
@@ -754,9 +759,123 @@
       .origin {
       }
       .return {
+
       }
 
   }
+
+  // step shedule
+
+  .book-step-shedule {
+
+      // .book-step-shedule__wrap
+
+      &__wrap {
+        margin-top: 60px;
+        display: flex;
+        column-gap: 2px;
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          > li {
+            display: flex;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 23px;
+            cursor: pointer;
+            color: var(--primary);
+            &:nth-child(even) {
+              background-color: rgba(#64AA3A, 0.1);
+            }
+            &:first-child {
+              margin-bottom: 3px;
+            }
+            > div {
+              flex: 0 1 50%;
+              padding-left: 20px;
+              @media (max-width: 576px) {
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+        h3 {
+          margin-bottom: 2px;
+          padding-left: 20px;
+          @media (max-width: 576px) {
+            padding-left: 10px;
+          }
+        }
+        @media (max-width: 768px) {
+          flex-direction: column;
+          row-gap: 2px;
+        }
+      }
+
+      // .book-step-shedule__origin
+
+      &__origin {
+        flex: 0 1 50%;
+        background-color: var(--whiteColor);
+        padding: 20px 60px;
+        @media (max-width: 1200px) {
+          padding: 20px 40px;
+        }
+        @media (max-width: 992px) {
+          padding: 20px;
+        }
+        @media (max-width: 576px) {
+          padding: 20px 10px;
+        }
+      }
+
+      // .book-step-shedule__list
+
+      &__list {
+
+      }
+
+      // .book-step-shedule__return
+
+      &__return {
+        flex: 0 1 50%;
+        background-color: var(--whiteColor);
+        padding: 20px 60px;
+        @media (max-width: 1200px) {
+          padding: 20px 40px;
+        }
+        @media (max-width: 992px) {
+          padding: 20px;
+        }
+        @media (max-width: 576px) {
+          padding: 20px 10px;
+        }
+      }
+
+      .departure-head, .arrival-head {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: var(--secondary);
+        //max-width: 162px;
+        @media (max-width: 992px) {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+      .arrival-head {
+      }
+      .departure {
+      }
+      .arrival {
+      }
+      .selected-time {
+        font-weight: 700;
+      }
+  }
+
+
 
   // Step 3 origin
 
@@ -988,8 +1107,8 @@
         color: var(--primary);
         cursor: pointer;
         @media (max-width: 992px) {
-          font-size: 35px;
-          line-height: 35px;
+          font-size: 25px;
+          line-height: 25px;
         }
       }
       .counterBut {
@@ -1006,9 +1125,9 @@
         text-align: center;
         color: var(--primary);
         @media (max-width: 992px) {
-          font-size: 35px;
-          line-height: 35px;
-          width: 60px;
+          font-size: 25px;
+          line-height: 25px;
+          width: 40px;
         }
       }
 
@@ -1026,7 +1145,7 @@
           text-transform: uppercase;
           color: var(--secondary);
           @media (max-width: 992px) {
-            font-size: 14px;
+            font-size: 12px;
           }
         }
       }
@@ -1060,6 +1179,7 @@
             font-size: 16px;
             line-height: 16px;
             color: var(--primary);
+            border-radius: 0 !important;
             &:last-child {
               margin-bottom: 0;
             }
@@ -1087,8 +1207,9 @@
             position: relative;
             appearance: none;
             cursor: pointer;
-            margin-bottom: 9px;
-            padding-left: 18px;
+            display: block;
+            margin-top: 6px;
+            padding-left: 22px;
             //display: inline-block;
 
           }
@@ -1138,7 +1259,9 @@
 
       .address-return {
         > div {
-          margin-top: 5px;
+          display: flex;
+          align-items: flex-start;
+          //margin-top: 5px;
           label {
             font-weight: 400;
             font-size: 15px;
@@ -1185,6 +1308,7 @@
           margin-bottom: 20px;
           margin-top: 10px;
           border-bottom: 1px solid #eeeeee;
+          border-radius: 0 !important;
           &:last-child {
             margin-bottom: 0;
           }
@@ -1207,6 +1331,7 @@
           max-width: fit-content;
           padding-left: 66px;
           padding-right: 66px;
+          border-radius: none;
           @media (max-width: 768px) {
             margin-top: 40px;
             display: block;
@@ -1296,6 +1421,9 @@
           border-bottom: 1px solid #eeeeee;
           cursor: pointer;
           margin-top: 10px;
+          color: var(--primary);
+          border-radius: none !important;
+          background-color: transparent !important;
           @media (max-width: 768px) {
             margin-bottom: 10px;
             &:last-child {
@@ -1359,7 +1487,9 @@
       margin: 0;
     }
   }
-
+  .info-contact-number-out {
+    color: var(--primary);
+  }
 }
 
  // Selected block
@@ -1633,8 +1763,14 @@
       height: 40px;
     }
     @media (max-width: 576px) {
-      width: 20px;
-      height: 20px;
+      width: calc(50% - 2px);
+      height: 40px !important;
+      background-color: var(--greenColor);
+      border: 2px solid #64AA3A;
+      img {
+        width: 39px;
+        height: 36px;
+      }
     }
   }
 
@@ -1644,27 +1780,32 @@
   .swiper-btn-next {
     right: 50px;
     @media (max-width: 1650px) {
-      right: 20px;
+      right: 0px;
     }
     @media (max-width: 768px) {
-      right: 20px;
+      right: 0px;
       top: calc(50% + 50px);
     }
     @media (max-width: 576px) {
-      right: 10px;
+      position: fixed;
+      right: 0px;
+      top: calc(100% - 20px);
+      text-align: right;
     }
   }
   .swiper-btn-prev {
     left: 50px;
     @media (max-width: 1650px) {
-      left: 20px;
+      left: 0px;
     }
     @media (max-width: 768px) {
-      left: 20px;
+      left: 0px;
       top: calc(50% + 50px);
     }
     @media (max-width: 576px) {
-      left: 10px;
+      position: fixed;
+      left: 0px;
+      top: calc(100% - 20px);
     }
   }
   .swiper-slide {
@@ -1687,7 +1828,8 @@
       padding: 30px 20px;
   }
   @media (max-width: 576px) {
-    padding: 20px 10px;
+    padding: 20px 10px 60px 10px;
+    max-height: none;
   }
   // .footer__wrap
 
