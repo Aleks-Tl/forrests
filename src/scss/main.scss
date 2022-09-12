@@ -759,7 +759,7 @@
       .origin {
       }
       .return {
-
+        opacity: 0.3;
       }
 
   }
@@ -922,8 +922,11 @@
         @media (max-width: 1600px) {
           padding: 20px;
         }
+        @media (max-width: 992px) {
+          padding-right: 50px;
+        }
         @media (max-width: 576px) {
-          padding: 20px 10px 10px 10px;
+          padding: 20px 40px 10px 10px;
         }
       }
 
@@ -1149,6 +1152,73 @@
           }
         }
       }
+
+      // tooltips
+
+      /* Tooltip container */
+.tooltip {
+  position: absolute;
+  display: inline-block;
+  top: 20px;
+  right: 20px;
+  @media (max-width: 576px) {
+    top: 10px;
+    right: 10px;
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #ffffff;
+  color: var(--primary);
+  text-align: center;
+  padding: 15px 10px;
+  filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.1));
+  @media (max-width: 576px) {
+    width: 180px;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0%;
+  margin-left: -160px;
+
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 172px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  @media (max-width: 576px) {
+    left: 168px;
+  }
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
   }
 
   // Book step four

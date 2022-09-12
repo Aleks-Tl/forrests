@@ -100,18 +100,43 @@ catalogItemCounter('.fieldCount');
 }
 
 
-/* let returnInp = document.querySelector('#return-inp');
+// Toggle return form
+
+if (document.querySelectorAll('.book-step-two').length > 0) {
+  let returnInp = document.querySelector('#return-inp');
+
+  let form  = document.getElementById("return");
+
+
+    returnInp.addEventListener('click', () => {
+    form.classList.toggle('active');
+
+    if (form.classList.contains('active')) {
+
+      let allElements = form.elements;
+      for (var i = 0, l = allElements.length; i < l; ++i) {
+        // allElements[i].readOnly = true;
+           allElements[i].disabled=false;
+           form.style.opacity = '1';
+     }
+    } else {
+      let allElements = form.elements;
+      for (var i = 0, l = allElements.length; i < l; ++i) {
+        // allElements[i].readOnly = true;
+           allElements[i].disabled=true;
+           form.style.opacity = '0.4';
+     }
+    }
+  })
+
+}
 
 
 
-let form  = document.getElementById("return");
-let allElements = form.elements;
 
-for (var i = 0, l = allElements.length; i < l; ++i) {
-      // allElements[i].readOnly = true;
-         allElements[i].disabled=false;
-         form.style.opacity = '1';
-         document.querySelector('.#return-inp').style.outline = "1px solid red";
-} */
+
+
+
+
 
 
