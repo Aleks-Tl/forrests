@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@include('partials/head.html')
+
+<body class="page__body">
+
+    @include('partials/header.html')
+    <main class="contact-us" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">
+      <div class="container">
+        <div class="contact-us__wrap">
+          <div class="contact-us__contact">
+            <h1 class="contact-us__title title">Contact Us</h1>
+            <div class="contact-us__name">Experience Travelling With Us</div>
+            <p class="contact-us__text">Our friendly staff members at Forrest's Passenger Services are here to help ensure you have a comfortable experience travelling with us. We may be able to help you with your special requirements. Please let us know if you have mobility issues, extra luggage, oversize items, or have a young child travelling with you. Our drivers will do their best to accommodate your needs.
+            </p>
+            <h3 class="contact-us__call">PLEASE CALL OR EMAIL US IF YOU HAVE ANY QUESTIONS OR SPECIAL REQUESTS.</h3>
+            <ul>
+              <li>
+                <a href="mailto:enquiries@forrests.com.au">enquiries@forrests.com.au</a>
+              </li>
+              <li>
+                <p>Phone within Australia: <a href="tel:1300177207">1300 177 207</a></p>
+                <p>Phone outside Australia: <a href="tel:61734086221">(+61 7) 3408 6221</a></p>
+              </li>
+              <li>
+                <p>Office hours: Monday to Friday - 09:00 to 17:00 (9am to 5pm) AEST; </p>
+                <p>Saturday, Sunday & Public holidays - 09:00 to 14:00 (9am to 2pm) AEST ; </p>
+                <p>Closed Christmas Day. </p>
+              </li>
+              <li>
+                <address>
+                  Forrest's Passenger Services<br>
+                  P.O. Box 1221<br>
+                  Bongaree Post Office<br>
+                  Bribie Island<br>
+                  QLD (Australia) 4507<br>
+                </address>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-us__touch">
+              <div class="contact-us__title title-sm">Get in Touch</div>
+              <form action="#" id="contact-us" class="contact-us__form">
+                <label for="contact-us__name">First name<span>*</span></label>
+                <input type="text" id="contact-us__name" name="contact-us__name" placeholder="Harrison" value="Harrison" required>
+                <label for="contact-us__surname">Surname<span>*</span></label>
+                <input type="text" id="contact-us__surname" name="contact-us__surname" placeholder="Seitz" value="Seitz" required>
+                <label for="contact-us__email">Contact email<span>*</span></label>
+                <input type="email" id="contact-us__email" name="contact-us__email" required>
+                <label for="contact-us__tel">Phone number</label>
+                <input type="tel" id="contact-us__tel" name="contact-us__tel" placeholder="+61">
+                <label for="contact-us__text">Message</label>
+                <textarea name="contact-us__text" id="contact-us__text"></textarea>
+                <input type="submit" class="contact-us__btn btn-reset btn" value="submit"></input>
+              </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @include('partials/footer.html')
+
+</body>
+
+</html>

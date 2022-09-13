@@ -2401,4 +2401,225 @@
 
 
 
+// Page About Us
+
+.about-us {
+  max-height: 736px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.03);
+  @media (max-width: 1500px) {
+    max-height: none;
+  }
+  // .about-us__wrap
+
+  &__wrap {
+    display: flex;
+    @media (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  // .about-us__img
+
+  &__img {
+    flex: 0 1 50%;
+    max-height: 736px;
+    overflow: hidden;
+    @media (max-width: 1500px) {
+      max-height: none;
+      overflow: visible;
+      img {
+        height: 100%;
+        object-fit: cover;
+        //text-align: center;
+        @media (max-width: 992px) {
+          height: auto;
+        }
+      }
+    }
+    @media (max-width: 992px) {
+      flex: 0 1 100%;
+    }
+  }
+
+  // .about-us__descr
+
+  &__descr {
+    flex: 0 1 50%;
+    padding-top: 100px;
+    padding-left: 170px;
+    @media (max-width: 1500px) {
+      padding: 70px 100px;
+    }
+    @media (max-width: 1200px) {
+      padding: 50px;
+    }
+    @media (max-width: 992px) {
+      flex: 0 1 100%;
+    }
+    @media (max-width: 768px) {
+        padding: 30px 20px 20px 20px;
+    }
+  }
+
+  // .about-us__wrapper
+
+  &__wrapper {
+    max-width: 440px;
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+      color: var(--primary);
+    }
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
+
+  // .about-us__title
+
+  &__title {}
+
+  // .about-us__text
+
+  &__text {}
+}
+
+
+// Page Contact Us
+
+.contact-us {
+  padding: 50px 0;
+  max-height: 736px;
+  // .contact-us__wrap
+
+  &__wrap {
+    display: flex;
+    gap: 2px;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-top: 15px;
+      > li {
+        padding-left: 50px;
+        margin-bottom: 14px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--primary);
+        > a {
+          color: var(--primary);
+          transition: all 0.3s ease 0s;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        p {
+          line-height: 24px;
+          padding: 0;
+          margin: 0;
+        }
+      }
+      > li:first-child {
+        background-image: url('../img/contact-icon-mail.svg');
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: left top;
+        line-height: 30px;
+      }
+      > li:nth-child(2) {
+        background-image: url('../img/contact-icon-smartphone.svg');
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: left top;
+        > p {
+          a {
+            color: var(--primary);
+            transition: all 0.3s ease 0s;
+             &:hover {
+            text-decoration: underline;
+          }
+          }
+        }
+      }
+      > li:nth-child(3) {
+        background-image: url('../img/contact-icon-clock.svg');
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: left top;
+      }
+      > li:last-child {
+        background-image: url('../img/contact-icon-location.svg');
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: left top;
+        address {
+          line-height: 22px;
+          font-style: normal;
+        }
+      }
+    }
+  }
+
+  // .contact-us__contact
+
+  &__contact {
+    flex: 0 1 66.66%;
+    background-color: var(--whiteColor);
+    padding: 40px 80px;
+  }
+
+  // .contact-us__title
+
+  &__title {}
+
+  // .contact-us__name
+
+  &__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-top: 10px;
+  }
+
+  // .contact-us__text
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--primary);
+  }
+
+  // .contact-us__call
+
+  &__call {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111111;
+  }
+
+  // .contact-us__touch
+
+  &__touch {
+    flex: 0 1 33.33%;
+    background-color: var(--whiteColor);
+    padding: 40px;
+  }
+
+  // .contact-us__form
+
+  &__form {}
+
+  // .contact-us__btn
+
+  &__btn {}
+}
 
