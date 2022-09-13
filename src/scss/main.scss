@@ -2330,6 +2330,75 @@
   }
 }
 
+// Page Where to go
+
+.where-to-go {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.03);
+  max-height: 736px;
+  @media (max-width: 1100px) {
+    max-height: none ;
+  }
+  // .where-to-go__title
+
+  &__title {
+    text-align: center;
+  }
+
+  // .where-to-go__wrap
+
+  &__wrap {
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 15px;
+    max-width: 1030px;
+    @media (max-width: 1100px) {
+      max-width: 100%;
+      justify-content: center;
+    }
+  }
+
+  // .where-to-go__item
+
+  &__item {
+    @media (max-width: 576px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  // .where-to-go__video
+
+  &__video {
+    @media (max-width: 576px) {
+      iframe {
+        width: auto !important;
+        height: auto !important;
+      }
+    }
+    @media (max-width: 400px) {
+        iframe {
+          @media (max-width: 400px) {
+            width: 290px !important;
+            height: 150px !important;
+          }
+        }
+    }
+  }
+
+  // .where-to-go__name
+
+  &__name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--primary);
+  }
+}
+
 
 
 

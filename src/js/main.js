@@ -137,7 +137,3 @@ if (document.querySelectorAll('.book-step-two').length > 0) {
 
 
 
-
-
-
-
