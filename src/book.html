@@ -79,7 +79,7 @@
                     </div>
                   </div>
                   <div class="book-step-one__port">
-                    <h1 class="suburb__title">Please select your port:</h1>
+                    <h2 class="suburb__title">Please select your port:</h2>
                     <div class="checkboxes-suburb">
                       <div>
                         <input type="checkbox" id="check15" name="check15">
@@ -140,13 +140,13 @@
                   <div class="container">
                     <div class="book-step-two__wrap">
                       <div class="book-step-two__origin">
-                        <h1 class="book-step-two__title title-sm">Origin</h1>
+                        <h2 class="book-step-two__title title-sm">Origin</h2>
                         <span class="call">Call our office if your travel is less than 24 hours away</span>
                         <form action="#" class="origin">
                           <label for="date">Flight/Cruise departure/arrival date</label>
-                          <input type="date" id="date" value="27 July 2022">
+                          <input type="date" id="date" value="">
                           <label for="time">Flight/Cruise departure/arrival time</label>
-                          <input type="time" id="time" value="6:30 PM">
+                          <input type="time" id="time" value="">
                           <label for="to-coming-from">Where is this flight going to/coming from? (For flights only)</label>
                           <input type="text" id="to-coming-from">
                           <label for="flight-number">Flight number/Ship name</label>
@@ -169,16 +169,16 @@
                             <span class="slider round"></span>
                           </label>
                         </div>
-                        <h1 class="book-step-two__title title-sm">Return</h1>
-                        <form action="#" class="return" id="return" class="active">
+                        <h2 class="book-step-two__title title-sm">Return</h2>
+                        <form action="#" class="return active" id="return">
                           <label for="date">Flight/Cruise departure/arrival date</label>
-                          <input type="date" id="date" value="27 July 2022" disabled>
+                          <input type="date" id="date1" value="" disabled>
                           <label for="time">Flight/Cruise departure/arrival time</label>
-                          <input type="time" id="time" value="6:30 PM" disabled>
+                          <input type="time" id="time1" value="" disabled>
                           <label for="to-coming-from">Where is this flight going to/coming from? (For flights only)</label>
-                          <input type="text" id="to-coming-from" disabled>
+                          <input type="text" id="to-coming-from2" disabled>
                           <label for="flight-number">Flight number/Ship name</label>
-                          <input type="text" id="flight-number" disabled>
+                          <input type="text" id="flight-number1" disabled>
                           <div class="book-step-two__bot">
                             <input type="checkbox" id="not-flying-return" name="not-flying-return" disabled>
                             <label for="not-flying-return">Not flying/cruising</label>
@@ -593,9 +593,9 @@
                         </div>
                         <div class="book-step-three-origin__footer">
                           <div class="counter">
-                            <button type="button" class="but counterBut dec"><</button>
+                            <button type="button" class="but counterBut dec">&#60;</button>
                             <input type="text" class="field fieldCount" name="family" value="2" data-min="1" data-max="20">
-                            <button type="button" class="but counterBut inc">></button>
+                            <button type="button" class="but counterBut inc">&#62;</button>
                           </div>
                         </div>
                         <div class="tooltips"><img src="img/tooltip-icon.svg" alt="">
@@ -630,9 +630,9 @@
                         </div>
                         <div class="book-step-three-origin__footer">
                           <div class="counter">
-                            <button type="button" class="but counterBut dec"><</button>
+                            <button type="button" class="but counterBut dec">&#60;</button>
                             <input type="text" class="field fieldCount" name="bagagge" value="4" data-min="1" data-max="20">
-                            <button type="button" class="but counterBut inc">></button>
+                            <button type="button" class="but counterBut inc">&#62;</button>
                           </div>
                         </div>
                         <div class="tooltips"><img src="img/tooltip-icon.svg" alt="">
@@ -653,9 +653,9 @@
                         </div>
                         <div class="book-step-three-origin__footer">
                           <div class="counter">
-                            <button type="button" class="but counterBut dec"><</button>
+                            <button type="button" class="but counterBut dec">&#60;</button>
                             <input type="text" class="field fieldCount" name="chair" value="2" data-min="1" data-max="20">
-                            <button type="button" class="but counterBut inc">></button>
+                            <button type="button" class="but counterBut inc">&#62;</button>
                           </div>
                         </div>
                         <div class="tooltips"><img src="img/tooltip-icon.svg" alt="">
@@ -672,9 +672,9 @@
                         </div>
                         <div class="book-step-three-origin__footer">
                           <div class="counter">
-                            <button type="button" class="but counterBut dec"><</button>
+                            <button type="button" class="but counterBut dec">&#60;</button>
                             <input type="text" class="field fieldCount" name="armchair" value="0" data-min="0" data-max="20">
-                            <button type="button" class="but counterBut inc">></button>
+                            <button type="button" class="but counterBut inc">&#62;</button>
                           </div>
                         </div>
                         <div class="tooltips"><img src="img/tooltip-icon.svg" alt="">
@@ -716,17 +716,17 @@
                             <div class="counter-wrap">
                               <label for="family-orig">Origin trip</label>
                               <div class="counter">
-                                <button type="button" class="but counterBut dec"><</button>
+                                <button type="button" class="but counterBut dec">&#60;</button>
                                 <input type="text" class="field fieldCount" name="family-orig" id="family-orig" value="2" data-min="1" data-max="20">
-                                <button type="button" class="but counterBut inc">></button>
+                                <button type="button" class="but counterBut inc">&#62;</button>
                               </div>
                             </div>
                             <div class="counter-wrap">
                               <label for="family-return">Return trip</label>
                               <div class="counter">
-                                <button type="button" class="but counterBut dec"><</button>
+                                <button type="button" class="but counterBut dec">&#60;</button>
                                 <input type="text" class="field fieldCount" name="family-return" id="family-return" value="2" data-min="1" data-max="20">
-                                <button type="button" class="but counterBut inc">></button>
+                                <button type="button" class="but counterBut inc">&#62;</button>
                               </div>
                             </div>
                           </div>
@@ -772,17 +772,17 @@
                             <div class="counter-wrap">
                               <label for="luggage-orig">Origin trip</label>
                               <div class="counter">
-                                <button type="button" class="but counterBut dec"><</button>
+                                <button type="button" class="but counterBut dec">&#60;</button>
                                 <input type="text" class="field fieldCount" name="luggage-orig" id="luggage-orig" value="3" data-min="1" data-max="20">
-                                <button type="button" class="but counterBut inc">></button>
+                                <button type="button" class="but counterBut inc">&#62;</button>
                               </div>
                             </div>
                             <div class="counter-wrap">
                               <label for="luggage-return">Return trip</label>
                               <div class="counter">
-                                <button type="button" class="but counterBut dec"><</button>
+                                <button type="button" class="but counterBut dec">&#60;</button>
                                 <input type="text" class="field fieldCount" name="luggage-return" id="luggage-return" value="4" data-min="1" data-max="20">
-                                <button type="button" class="but counterBut inc">></button>
+                                <button type="button" class="but counterBut inc">&#62;</button>
                               </div>
                             </div>
                           </div>
@@ -808,17 +808,17 @@
                             <div class="counter-wrap">
                               <label for="chair-orig">Origin trip</label>
                               <div class="counter">
-                                <button type="button" class="but counterBut dec"><</button>
+                                <button type="button" class="but counterBut dec">&#60;</button>
                                 <input type="text" class="field fieldCount" name="chair-orig" id="chair-orig" value="2" data-min="1" data-max="20">
-                                <button type="button" class="but counterBut inc">></button>
+                                <button type="button" class="but counterBut inc">&#62;</button>
                               </div>
                             </div>
                             <div class="counter-wrap">
                               <label for="chair-return">Return trip</label>
                               <div class="counter">
-                                <button type="button" class="but counterBut dec"><</button>
+                                <button type="button" class="but counterBut dec">&#60;</button>
                                 <input type="text" class="field fieldCount" name="chair-return" id="chair-return" value="2" data-min="1" data-max="20">
-                                <button type="button" class="but counterBut inc">></button>
+                                <button type="button" class="but counterBut inc">&#62;</button>
                               </div>
                             </div>
                           </div>
@@ -840,17 +840,17 @@
                             <div class="counter-wrap">
                               <label for="armchair-orig">Origin trip</label>
                               <div class="counter">
-                                <button type="button" class="but counterBut dec"><</button>
+                                <button type="button" class="but counterBut dec">&#60;</button>
                                 <input type="text" class="field fieldCount" name="armchair-orig" id="armchair-orig" value="0" data-min="1" data-max="20">
-                                <button type="button" class="but counterBut inc">></button>
+                                <button type="button" class="but counterBut inc">&#62;</button>
                               </div>
                             </div>
                             <div class="counter-wrap">
                               <label for="armchair-return">Return trip</label>
                               <div class="counter">
-                                <button type="button" class="but counterBut dec"><</button>
+                                <button type="button" class="but counterBut dec">&#60;</button>
                                 <input type="text" class="field fieldCount" name="armchair-return" id="armchair-return" value="0" data-min="1" data-max="20">
-                                <button type="button" class="but counterBut inc">></button>
+                                <button type="button" class="but counterBut inc">&#62;</button>
                               </div>
                             </div>
                           </div>
@@ -959,7 +959,7 @@
                         <div class="payment__wrap">
                           <div class="payment__wrapper">
                             <label for="expiry-date">Expiry date<span>*</span></label>
-                            <select name="month" id="month">
+                            <select name="month" id="expiry-date">
                               <option value="month" selected>Month</option>
                               <option value="val - 1">Value - 1</option>
                               <option value="val - 2">Value - 2</option>
