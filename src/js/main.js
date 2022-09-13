@@ -116,15 +116,15 @@ if (document.querySelectorAll('.book-step-two').length > 0) {
       let allElements = form.elements;
       for (var i = 0, l = allElements.length; i < l; ++i) {
         // allElements[i].readOnly = true;
-           allElements[i].disabled=false;
-           form.style.opacity = '1';
+           allElements[i].disabled=true;
+           form.style.opacity = '0.4';
      }
     } else {
       let allElements = form.elements;
       for (var i = 0, l = allElements.length; i < l; ++i) {
         // allElements[i].readOnly = true;
-           allElements[i].disabled=true;
-           form.style.opacity = '0.4';
+           allElements[i].disabled=false;
+           form.style.opacity = '1';
      }
     }
   })
