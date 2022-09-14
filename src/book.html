@@ -9,7 +9,7 @@
 
     <section class="book">
       <div class="container-flui">
-        <div class="book__slider">
+        <div class="book__slider" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat;">
           <div class="swiper mySwiper book-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide book-step-one">
@@ -120,7 +120,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide book-step-two" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat;">
+              <div class="swiper-slide book-step-two">
                 <div class="container-flui">
                   <div class="selected-s">
                     <div class="selected-s__wrap">
@@ -195,7 +195,7 @@
 
 
               </div>
-              <div class="swiper-slide book-step-shedule" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat;">
+              <div class="swiper-slide book-step-shedule">
                 <div class="container-flui">
                   <div class="selected-s">
                     <div class="selected-s__wrap">
@@ -380,7 +380,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide book-step-shedule" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat;">
+              <div class="swiper-slide book-step-shedule">
                 <div class="container-flui">
                   <div class="selected-s">
                     <div class="selected-s__wrap">
@@ -565,7 +565,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide book-step-three-origin" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">
+              <div class="swiper-slide book-step-three-origin">
                 <div class="container-flui">
                   <div class="selected-s">
                     <div class="selected-s__wrap">
@@ -673,7 +673,7 @@
                         <div class="book-step-three-origin__footer">
                           <div class="counter">
                             <button type="button" class="but counterBut dec">&#60;</button>
-                            <input type="text" class="field fieldCount" name="armchair" value="0" data-min="0" data-max="20">
+                            <input type="text" class="field fieldCount" name="armchair" value="0" data-min="1" data-max="20">
                             <button type="button" class="but counterBut inc">&#62;</button>
                           </div>
                         </div>
@@ -685,7 +685,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide book-step-three-return book-step-three-origin" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">
+              <div class="swiper-slide book-step-three-return book-step-three-origin">
                 <div class="container-flui">
                   <div class="selected-s">
                     <div class="selected-s__wrap">
@@ -863,7 +863,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide book-step-four" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">
+              <div class="swiper-slide book-step-four">
                 <div class="container-flui">
                   <div class="selected-s">
                     <div class="selected-s__wrap">
@@ -892,9 +892,9 @@
                         <label for="email">Contact email<span>*</span></label>
                         <input type="email" name="email" id="email" required>
                         <label for="phone">Phone number 1<span>*</span></label>
-                        <input type="tel" name="phone" id="phone" required>
+                        <input type="number" name="phone" id="phone" required>
                         <label for="phone2">Phone number 2<span>*</span></label>
-                        <input type="tel" name="phone2" id="phone2" required>
+                        <input type="number" name="phone2" id="phone2" required>
                       </form>
                       <form action="#" class="address-origin">
                         <h2 class="title-sm">address origin</h2>
@@ -930,7 +930,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide book-step-five" style="background-image: url('img/bg-plains-backing.png'); background-size: cover; background-position: left top; background-repeat: repeat">
+              <div class="swiper-slide book-step-five">
                 <div class="container-flui">
                   <div class="selected-s">
                     <div class="selected-s__wrap">
@@ -953,7 +953,7 @@
                         <h2 class="title-sm">payment</h2>
                         <form action="#" class="payment">
                         <label for="card-number">Card number<span>*</span></label>
-                        <input type="text" name="card-number" id="card-number" placeholder="1234 - 5678 - 9876 - 5432" value="1234 - 5678 - 9876 - 5432" required>
+                        <input type="number" name="card-number" id="card-number" placeholder="1234 - 5678 - 9876 - 5432" value="1234 - 5678 - 9876 - 5432" required min="16" max="16">
                         <label for="card-name">Cardholder name<span>*</span></label>
                         <input type="text" name="card-name" id="card-name" placeholder="Harrison Seitz" value="Harrison Seitz" required>
                         <div class="payment__wrap">

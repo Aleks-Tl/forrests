@@ -60,6 +60,9 @@ body {
   font-size: 14px;
   color: var(--primary);
   font-family: var(--font-family, sans-serif);
+  &.lock {
+    overflow:hidden;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
