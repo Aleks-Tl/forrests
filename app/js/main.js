@@ -1,6 +1,27 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/_book-navigation.js":
+/*!************************************!*\
+  !*** ./src/js/_book-navigation.js ***!
+  \************************************/
+/***/ (() => {
+
+if (document.querySelectorAll('.book__slider').length > 0) {
+  let swiperBook = new Swiper(".book-slider", {
+    mousewheel: false,
+    //autoHeight: true,
+    allowTouchMove: false,
+    speed: 1000,
+    navigation: {
+      nextEl: ".swiper-btn-next",
+      prevEl: ".swiper-btn-prev"
+    }
+  });
+}
+
+/***/ }),
+
 /***/ "./src/js/_components.js":
 /*!*******************************!*\
   !*** ./src/js/_components.js ***!
@@ -588,6 +609,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _book_navigation_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./_book-navigation.js */ "./src/js/_book-navigation.js");
+/* harmony import */ var _book_navigation_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_book_navigation_js__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -610,19 +634,6 @@ function transformBlockHeader() {
   } else {
     headerWrap.prepend(document.querySelector('.header__contacts'));
   }
-}
-
-if (document.querySelectorAll('.book__slider').length > 0) {
-  let swiperBook = new Swiper(".book-slider", {
-    mousewheel: false,
-    //autoHeight: true,
-    allowTouchMove: false,
-    speed: 1000,
-    navigation: {
-      nextEl: ".swiper-btn-next",
-      prevEl: ".swiper-btn-prev"
-    }
-  });
 } // Custom input type "Number"
 
 

@@ -2,6 +2,7 @@ import './_vendor';
 import vars from './_vars';
 import './_functions';
 import './_components';
+import './_book-navigation.js';
 
 document.addEventListener("DOMContentLoaded", function () {
   transformBlockHeader();
@@ -22,19 +23,6 @@ function transformBlockHeader() {
     headerWrap.prepend(document.querySelector('.header__contacts'));
   }
 
-}
-
-if (document.querySelectorAll('.book__slider').length > 0) {
-  let swiperBook = new Swiper(".book-slider", {
-    mousewheel: false,
-    //autoHeight: true,
-    allowTouchMove: false,
-    speed: 1000,
-    navigation: {
-      nextEl: ".swiper-btn-next",
-      prevEl: ".swiper-btn-prev",
-    },
-  });
 }
 
 
