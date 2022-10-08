@@ -717,7 +717,12 @@ if (document.querySelectorAll('.book-step-two').length > 0) {
       }
     }
   });
-}
+} // sELECT
+
+
+$(document).ready(function () {
+  $('.select').select2();
+});
 })();
 
 /******/ })()

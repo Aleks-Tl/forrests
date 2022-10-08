@@ -1198,6 +1198,10 @@
         form {
           background-color: var(--whiteColor);
           padding: 40px;
+          flex: 0 1 calc(100% / 3 - 2px);
+          @media (max-width: 992px) {
+            flex: 0 1 100%;
+          }
           input:not([type="checkbox"]) {
             width: 100%;
             padding: 9px 9px 9px 0;
@@ -1271,6 +1275,26 @@
             padding: 20px;
           }
         }
+        .select-s {
+          width: 100%;
+          select {
+            width: 100%;
+          }
+          .select2 {
+            width: 100% !important;
+            padding: 9px 9px 9px 0;
+            border-bottom: 1px solid #eeeeee;
+            margin: 5px 0;
+          }
+          .select2-container--default .select2-selection--single {
+            border: none;
+          }
+          .select2-container--default .select2-selection--single .select2-selection__arrow {
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+
         @media (max-width: 992px) {
           flex-direction: column;
           row-gap: 2px;

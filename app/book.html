@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
@@ -937,26 +938,74 @@
                         <label for="address">Apartment, Lot, Site, Unit, Villa number:</label>
                         <input type="text" name="address" id="address">
                         <label for="street">Street number<span>*</span></label>
-                        <input type="text" name="street" id="street" required>
+                        <!-- <input type="text" name="street" id="street" required> -->
+                        <div class="select-s">
+                          <select name="address" class="select" id="address">
+                            <option value="val-1" selected>Street number</option>
+                            <option value="val-1">Value — 1</option>
+                            <option value="val-2">Value — 2</option>
+                            <option value="val-3">Value — 2</option>
+                          </select>
+                        </div>
                         <label for="address-descr">Address description</label>
                         <input type="text" name="address-descr" id="address-descr">
                         <label for="street-name">Street name<span>*</span></label>
-                        <input type="text" name="street-name" id="street-name" required>
+                        <!-- <input type="text" name="street-name" id="street-name" required> -->
+                        <div class="select-s">
+                          <select name="street-name" class="select" id="street-name">
+                            <option value="val-1" selected>Street-name</option>
+                            <option value="val-1">Value — 1</option>
+                            <option value="val-2">Value — 2</option>
+                            <option value="val-3">Value — 2</option>
+                          </select>
+                        </div>
                         <label for="suburb">Suburb<span>*</span></label>
-                        <input type="text" name="suburb" id="suburb" required>
+                        <!-- <input type="text" name="suburb" id="suburb" required> -->
+                        <div class="select-s">
+                          <select name="suburb" class="select" id="suburb">
+                            <option value="val-1" selected>Suburb</option>
+                            <option value="val-1">Value — 1</option>
+                            <option value="val-2">Value — 2</option>
+                            <option value="val-3">Value — 2</option>
+                          </select>
+                        </div>
                       </form>
                       <form action="#" class="address-return">
                         <h2 class="title-sm">address Return</h2>
                         <label for="address-return">Apartment, Lot, Site, Unit, Villa number:</label>
                         <input type="text" name="address-return" id="address-return">
                         <label for="street-return">Street number<span>*</span></label>
-                        <input type="text" name="street-return" id="street-return" required>
+                        <!-- <input type="text" name="street-return" id="street-return" required> -->
+                        <div class="select-s">
+                          <select name="street-return" class="select" id="street-return">
+                            <option value="val-1" selected>Street number</option>
+                            <option value="val-1">Value — 1</option>
+                            <option value="val-2">Value — 2</option>
+                            <option value="val-3">Value — 2</option>
+                          </select>
+                        </div>
                         <label for="address-descr-return">Address description</label>
                         <input type="text" name="address-descr-return" id="address-descr-return">
                         <label for="street-name-return">Street name<span>*</span></label>
-                        <input type="text" name="street-name-return" id="street-name-return" required>
+                        <!-- <input type="text" name="street-name-return" id="street-name-return" required> -->
+                        <div class="select-s">
+                          <select name="street-name-return" class="select" id="street-name-return">
+                            <option value="val-1" selected>Street-name</option>
+                            <option value="val-1">Value — 1</option>
+                            <option value="val-2">Value — 2</option>
+                            <option value="val-3">Value — 2</option>
+                          </select>
+                        </div>
                         <label for="suburb-return">Suburb<span>*</span></label>
-                        <input type="text" name="suburb-return" id="suburb-return" required>
+                        <!-- <input type="text" name="suburb-return" id="suburb-return" required> -->
+                        <div class="select-s">
+                          <select name="suburb-return" class="select" id="suburb-return">
+                            <option value="val-1" selected>Suburb</option>
+                            <option value="val-1">Value — 1</option>
+                            <option value="val-2">Value — 2</option>
+                            <option value="val-3">Value — 2</option>
+                          </select>
+                        </div>
                         <div>
                           <input type="checkbox" id="trip" name="trip">
                           <label for="trip">Getting picked up/dropped off at same address for this trip?</label>
@@ -1153,6 +1202,7 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 

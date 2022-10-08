@@ -1827,6 +1827,16 @@ a {
 .book .book-step-four__forms form {
   background-color: var(--whiteColor);
   padding: 40px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc(33.3333333333% - 2px);
+  flex: 0 1 calc(33.3333333333% - 2px);
+}
+@media (max-width: 992px) {
+  .book .book-step-four__forms form {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+  }
 }
 .book .book-step-four__forms form input:not([type=checkbox]) {
   width: 100%;
@@ -1917,6 +1927,27 @@ a {
   .book .book-step-four__forms form {
     padding: 20px;
   }
+}
+.book .book-step-four__forms .select-s {
+  width: 100%;
+}
+.book .book-step-four__forms .select-s select {
+  width: 100%;
+}
+.book .book-step-four__forms .select-s .select2 {
+  width: 100% !important;
+  padding: 9px 9px 9px 0;
+  border-bottom: 1px solid #eeeeee;
+  margin: 5px 0;
+}
+.book .book-step-four__forms .select-s .select2-container--default .select2-selection--single {
+  border: none;
+}
+.book .book-step-four__forms .select-s .select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 @media (max-width: 992px) {
   .book .book-step-four__forms {
